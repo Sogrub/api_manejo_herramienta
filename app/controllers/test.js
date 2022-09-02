@@ -23,13 +23,13 @@ var test = {
             if ((new Date(dateInit)) >= (new Date(new Date(dateInit).setHours(3))) && (new Date(dateInit)) < (new Date(new Date(dateInit).setHours(13)))) {
                 switch ((new Date(dateInit).getDay())) {
                     case 0:
-                        console.log("Es Domingo");
+                        // console.log("Es Domingo");
                         break;
                     case 6:
-                        console.log("Es Sabado");
+                        // console.log("Es Sabado");
                         break;
                     default:
-                        console.log("Esta entre semana");
+                        // console.log("Esta entre semana");
                         min++
                         break;
                 }
