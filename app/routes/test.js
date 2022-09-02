@@ -6,6 +6,6 @@ router.get('/', function(req, res) {
   res.json({ message: 'Vas a buscar una cerveza' })
 })
 
-router.get('/managmentDates', chatController.getInfo)
+router.get('/managmentDates/:data', chatController.getInfo)
 
 module.exports = router

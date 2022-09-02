@@ -2,11 +2,13 @@
 //Ejecucion del enrutador TEST (Funciones)
 var test = {
     getInfo: function (req, res) {
-        body = req.body
-        if (!body.dateOne) return res.status(400).send({ mensaje: "Falta dateOne" })
-        if (!body.dateEnd) return res.status(400).send({ mensaje: "Falta dateEnd" })
-        dateOne = new Date(new Date(body.dateOne.replace("-05:00", "-00:00")).setSeconds(0))
-        dateEnd = new Date(new Date(body.dateEnd.replace("-05:00", "-00:00")).setSeconds(0))
+        params = req.params
+        query = req.query
+        console.log(query);
+        if (!query.dateOne) return res.status(400).send({ mensaje: "Falta dateOne" })
+        if (!query.dateEnd) return res.status(400).send({ mensaje: "Falta dateEnd" })
+        dateOne = new Date(new Date(query.dateOne.replace("-05:00", "-00:00")).setSeconds(0))
+        dateEnd = new Date(new Date(query.dateEnd.replace("-05:00", "-00:00")).setSeconds(0))
         let min = 0
         let hora = 0
         let dateInit = dateOne
