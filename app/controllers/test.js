@@ -20,7 +20,7 @@ var test = {
         while (dateInit <= dateEnd) {
             // console.log(dateInit);
             dateInit = new Date(dateInit.setMinutes(dateInit.getMinutes() + 1))
-            if ((new Date(dateInit)) >= (new Date(new Date(dateInit).setHours(3))) && (new Date(dateInit)) < (new Date(new Date(dateInit).setHours(18)))) {
+            if ((new Date(dateInit)) >= (new Date(new Date(dateInit).setHours(8))) && (new Date(dateInit)) < (new Date(new Date(dateInit).setHours(18)))) {
                 switch ((new Date(dateInit).getDay())) {
                     case 0:
                         // console.log("Es Domingo");
@@ -33,11 +33,6 @@ var test = {
                         min++
                         break;
                 }
-                // if ((new Date(dateInit).getDay()) != 0 || (new Date(dateInit).getDay()) != 6) {
-                //     console.log((new Date(dateInit).getDay()) != 0 || (new Date(dateInit).getDay()) != 6);
-                //     console.log(new Date(dateInit).getDay(), " - ", new Date(dateInit).getDay(), " - ", sum);
-                //     sum++
-                // }
             }
         }
 
