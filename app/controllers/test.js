@@ -14,13 +14,13 @@ var test = {
         let dateInit = dateOne
 
         console.log(new Date(dateInit));
-        console.log(new Date(new Date(dateInit).setHours(13)));
+        console.log(new Date(new Date(dateInit).setHours(18)));
         console.log(new Date(dateInit).getDay());
         console.log((new Date(dateInit).getDay()) == 0);
         while (dateInit <= dateEnd) {
             // console.log(dateInit);
             dateInit = new Date(dateInit.setMinutes(dateInit.getMinutes() + 1))
-            if ((new Date(dateInit)) >= (new Date(new Date(dateInit).setHours(3))) && (new Date(dateInit)) < (new Date(new Date(dateInit).setHours(13)))) {
+            if ((new Date(dateInit)) >= (new Date(new Date(dateInit).setHours(3))) && (new Date(dateInit)) < (new Date(new Date(dateInit).setHours(18)))) {
                 switch ((new Date(dateInit).getDay())) {
                     case 0:
                         // console.log("Es Domingo");
