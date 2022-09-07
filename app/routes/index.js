@@ -1,12 +1,16 @@
   var router = require('express').Router()
-  var test = require('./test')
+  var contactability = require('./contactability')
+  var currency_converter = require('./currency_converter')
 
-  //Primer ingreso
+  //First Login
   router.get('/', function (req, res) {
     res.status(200).json({ message: 'Estás conectado a nuestra API' })
   })
 
-  //Acceso a test
-  router.use('/test', test)
+  //Access a contactability
+  router.use('/contactability', contactability)
+
+  //Access a currency converter
+  router.use('/currencyConverter', currency_converter)
 
   module.exports = router

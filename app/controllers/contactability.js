@@ -1,8 +1,7 @@
 
-//Ejecucion del enrutador TEST (Funciones)
-var test = {
+//Ejecucion del enrutador Contactability (Funciones) //Regresa las horas hábiles que hay entre dos días
+var contactability = {
     getInfo: function (req, res) {
-        params = req.params
         query = req.query
         console.log(query);
         if (!query.dateOne) return res.status(400).send({ mensaje: "Falta dateOne" })
@@ -42,5 +41,5 @@ var test = {
     }
 }
 
-module.exports = test
+module.exports = contactability
 
