@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon app/app.js"
+    "start": "app/app.js"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.35.1",
