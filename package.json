@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "app/app.js"
+    "start": "node app/app.js"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.35.1",
